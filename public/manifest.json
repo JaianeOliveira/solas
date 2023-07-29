@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "Solas",
+	"version": "2.0.0",
+	"chrome_url_overrides": {
+		"newtab": "index.html"
+	},
+	"permissions": [
+		"activeTab",
+		"scripting",
+		"topSites",
+		"background",
+		"search",
+		"bookmarks",
+		"tabs"
+	],
+	"content-scripts": [
+		{
+			"js": ["scripts/content.js", "assets/*.js", "**/*.{js,ts,jsx,tsx}"],
+			"matches": ["<all_urls>"]
+		}
+	]
+}

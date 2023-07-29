@@ -4,11 +4,11 @@
 
 @font-face {
 	font-family: Jost;
-	src: url('src/assets/fonts/Jost-VariableFont_wght.ttf');
+	src: url('/fonts/Jost-VariableFont_wght.ttf');
 }
 @font-face {
 	font-family: Beckman;
-	src: url('src/assets/fonts/fonts/Beckman-Free.otf');
+	src: url('/fonts/fonts/Beckman-Free.otf');
 }
 
 @layer base {

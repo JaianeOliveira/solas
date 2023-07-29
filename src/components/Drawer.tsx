@@ -109,7 +109,7 @@ const Drawer = () => {
 							>
 								<img
 									className="object-cover h-full"
-									src={`src/assets/backgrounds-previews/p-${index + 1}.jpg`}
+									src={`/backgrounds-previews/p-${index + 1}.jpg`}
 									alt={`Background ${index + 1}`}
 								/>
 							</button>
