@@ -1,8 +1,12 @@
 # Solas - Chrome extension
-Extensão para alterar a aparência da nova guia do google chrome.
-![scrnli_29_07_2023_18-50-44](https://github.com/JaianeOliveira/solas/assets/82323559/d2195547-9bef-4f62-88c2-12d4badacc5c)
+![GitHub](https://img.shields.io/github/license/JaianeOliveira/solas)
+![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/JaianeOliveira/solas)
 
-## Preview
+Extensão para alterar a aparência da nova guia do google chrome.
+![scrnli_29_07_2023_18-50-44](https://github.com/JaianeOliveira/solas/assets/82323559/6430f889-7d6e-4687-8280-20777f9e675a)
+
+## 🖼️ Preview
+[Gravação de tela de 29-07-2023 22:32:30.webm](https://github.com/JaianeOliveira/solas/assets/82323559/7b56db36-51b4-46eb-9439-fde4c22f3a49)
 
 ## :wrench: Como instalar
 1. Faça o [download](https://github.com/JaianeOliveira/nature-chrome-theme/archive/refs/heads/main.zip) do projeto para sua máquina e descompacte o arquivo na pasta de sua preferência
@@ -17,5 +21,3 @@ Extensão para alterar a aparência da nova guia do google chrome.
 ![image](https://github.com/JaianeOliveira/nature-chrome-theme/assets/82323559/f515617e-6ae7-44f4-a530-2cf2de3fc17c)
 
 ## Licença
-
-##
