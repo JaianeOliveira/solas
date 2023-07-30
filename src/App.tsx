@@ -1,7 +1,7 @@
 /*global chrome*/
 
 import { Gear } from 'phosphor-react';
-import { useContext, useEffect, useRef } from 'react';
+import { useContext, useRef } from 'react';
 import Clock from './components/Clock';
 import Drawer from './components/Drawer';
 import { ConfigContext } from './contexts/ConfigContext';
@@ -11,13 +11,6 @@ export default function App() {
 	const { username, backgroundImage } = useContext(ConfigContext);
 	const { toggleVisibility, drawerIsOpen } = useContext(DrawerContext);
 	const searchInputRef = useRef('');
-
-	useEffect(() => {
-		console.log(
-			'dark mode is active',
-			window.matchMedia('(prefers-color-scheme: dark)').matches
-		);
-	});
 
 	return (
 		<div
