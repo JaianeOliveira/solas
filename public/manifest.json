@@ -19,5 +19,6 @@
 			"js": ["scripts/content.js", "assets/*.js", "**/*.{js,ts,jsx,tsx}"],
 			"matches": ["<all_urls>"]
 		}
-	]
+	],
+	"author": "jaianeoliveira.dev@gmail.com"
 }
