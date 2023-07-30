@@ -15,3 +15,7 @@ Extensão para alterar a aparência da nova guia do google chrome.
 ![image](https://github.com/JaianeOliveira/nature-chrome-theme/assets/82323559/d81eed6e-3c01-438b-b754-22bb4d930c95)
 6. Abra uma nova guia e digite seu nome
 ![image](https://github.com/JaianeOliveira/nature-chrome-theme/assets/82323559/f515617e-6ae7-44f4-a530-2cf2de3fc17c)
+
+## Licença
+
+##
