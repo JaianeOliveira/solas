@@ -11,13 +11,12 @@ const Drawer = () => {
 		toggleDarkModeIsActive,
 		username,
 		changeUsername,
+		backgrounds,
 	} = useContext(ConfigContext);
 	const [out, setOut] = useState(false);
 	const [changed, setChanged] = useState(false);
 
 	const [nameInputValue, setNameInputValue] = useState(username || '');
-
-	const backgrounds = 16;
 
 	function closeDrawer() {
 		setOut(true);
@@ -98,19 +97,20 @@ const Drawer = () => {
 				<form className="flex flex-col gap-2">
 					<span className="font-semibold">Background</span>
 					<div className="flex gap-4 flex-wrap">
-						{Array.from({ length: backgrounds }).map((_, index) => (
+						{backgrounds.map((item) => (
 							<button
-								onClick={(e) => {
+								onClick={async (e) => {
 									e.preventDefault();
-									changeBackgroundImage(index + 1);
+									changeBackgroundImage(item.id);
 								}}
-								key={index}
-								className=" aspect-square h-[12vh] rounded-md overflow-hidden border-zinc-200 border-2"
+								key={item.id}
+								className={`aspect-square h-[8vh] rounded-md overflow-hidden border-zinc-200 border-2 bg-[${item.avgColor}]`}
 							>
 								<img
-									className="object-cover h-full"
-									src={`/backgrounds-previews/p-${index + 1}.jpg`}
-									alt={`Background ${index + 1}`}
+									loading="lazy"
+									className="object-cover h-full w-full"
+									src={item.preview}
+									alt={item.alt}
 								/>
 							</button>
 						))}

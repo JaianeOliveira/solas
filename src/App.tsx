@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /*global chrome*/
 
 import { Gear } from 'phosphor-react';
@@ -12,15 +13,30 @@ export default function App() {
 	const { toggleVisibility, drawerIsOpen } = useContext(DrawerContext);
 	const searchInputRef = useRef('');
 
+	if (!backgroundImage) {
+		return (
+			<div className="bg-zinc-300 dark:bg-zinc-950 h-screen w-screen flex items-center justify-center flex-col gap-4">
+				<p className="text-md font-semibold text-zinc-900 dark:text-zinc-300">
+					Um momento, estamos trabalhando
+				</p>
+				<div className="relative animate-bounce">
+					<div className="absolute bg-zinc-800 dark:bg-zinc-300 h-4 w-4 rounded-full animate-ping"></div>
+					<div className="absolute bg-zinc-800 dark:bg-zinc-300 h-4 w-4 rounded-full animate-pulse"></div>
+				</div>
+			</div>
+		);
+	}
+
 	return (
 		<div
-			className={`relative bg-zinc-300 dark:bg-zinc-950 text-zinc-200 h-screen w-screen flex items-center justify-center flex-col bg-image bg-cover bg-no-repeat`}
+			className={`relative bg-zinc-300 dark:bg-zinc-900 text-zinc-200 h-screen w-screen flex items-center justify-center flex-col bg-image bg-cover bg-no-repeat`}
 		>
 			<div className="inset-0 absolute -z-0">
 				<img
-					src={`/backgrounds/w-${backgroundImage}.jpg`}
-					className="w-full h-full"
-					alt="Background image"
+					loading="lazy"
+					src={backgroundImage.src}
+					className="w-full h-full object-cover brightness-75"
+					alt={backgroundImage.alt}
 				/>
 			</div>
 			<div className="relative z-[1] flex flex-col items-center justify-center h-screen w-screen ">
@@ -56,6 +72,13 @@ export default function App() {
 				>
 					<Gear size={24} weight="fill" />
 				</button>
+				<a
+					href={backgroundImage.url}
+					target="_blank"
+					className="absolute left-[1vw] bottom-[1vh] dark:text-zinc-200/50 text-zinc-900/50 transition-all text-xs"
+				>
+					Image by {backgroundImage.photographer}
+				</a>
 				{drawerIsOpen && <Drawer />}
 			</div>
 		</div>
