@@ -7,7 +7,7 @@ Extensão para alterar a aparência da nova guia do google chrome.
 ![scrnli_29_07_2023_18-50-44](https://github.com/JaianeOliveira/solas/assets/82323559/6430f889-7d6e-4687-8280-20777f9e675a)
 
 ## 🖼️ Preview
-<video width="320" height="240" src="https://github.com/JaianeOliveira/solas/assets/82323559/7b56db36-51b4-46eb-9439-fde4c22f3a49" controls alt='preview-video' ></video>
+<video src="https://github.com/JaianeOliveira/solas/assets/82323559/7b56db36-51b4-46eb-9439-fde4c22f3a49" controls alt='preview-video' ></video>
 
 ## :wrench: Como instalar
 1. Faça o download do projeto [aqui](https://drive.google.com/file/d/10M323mlPfAjf0HruRhxKdgUFeG2rQcVH/view?usp=sharing) e extraia em qualquer lugar da sua máquina.
